@@ -1,0 +1,52 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    background: url(../images/struckaxiom.png);
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+    background-color: #F8F8F8;
+    margin-bottom: 20px;
+}
+.mbody {
+    background-color: #F8F8F8;
+}
+.showoff{
+    background-image: url("../images/banner.png");
+    background-size: cover;
+    height: 250px;
+}
+.highlight{
+    color: #F05A24;
+}
+.highlight2{
+    color: #F05A24;
+    text-decoration: underline;
+}
+.footer{
+    background-color: #222222;
+    color: #DDDDDD;
+}
+.footer a:link{
+    color: #DDDDDD;
+    text-decoration: underline;
+}
+.footer a:visited {
+    color: #DDDDDD;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #DDDDDD;
+    text-decoration: underline;
+}
+
+.footer a:active {
+    color: #DDDDDD;
+    text-decoration: underline;
+}
