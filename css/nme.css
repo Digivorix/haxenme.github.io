@@ -16,11 +16,6 @@ body {
 .mbody {
     background-color: #F8F8F8;
 }
-.showoff{
-    background-image: url("../images/banner.png");
-    background-size: cover;
-    height: 250px;
-}
 .highlight{
     color: #F05A24;
 }

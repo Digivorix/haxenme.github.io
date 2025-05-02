@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <title>NME :: Download</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <!-- Custom styles -->
+        <link href="../css/nme.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="../js/html5shiv.min.js"></script>
+        <script src="../js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <!-- Static navbar -->
+            <nav id="header" class="navbar navbar-inverse"></nav>
+            <div class="jumbotron">
+                <ol class="breadcrumb">
+                    <li><a href="../">Home</a></li>
+                    <li class="active">Download</li>
+                </ol>
+                <h2 class="highlight">Download</h2>
+                <hr>
+                <div class="container mbody">
+                	<h5>NME can either be installed from Haxelib or <a href="https://github.com/haxenme/nme">Github</a></h5>
+                    <h3 class="highlight">Installation</h3>
+                    <h5>1. Install <a href="http://www.haxe.org/">Haxe</a></h5>
+                    <h5>2. Install NME</h5>
+                    <pre><code>haxelib install hxcpp
+haxelib install nme
+haxelib run nme setup
+</code></pre>
+					<h5>To run with <code>NME_LOCAL_TOOLKIT</code> (the default for Android now), update the submodules with:</h5>
+					<pre><code>git submodule init
+git submodule update
+</code></pre>
+					<h5>To install a specific version</h5>
+					<ol type="1">
+					  <li>Go to <a href="https://github.com/haxenme/nme/releases">the releases page</a></li>
+					  <li>Download a version, for example nme-6.3.24.zip</li>
+					  <li><code>haxelib install ~/Downloads/nme-6.3.24.zip</code></li>
+					</ol>
+					
+					<h3 class="highlight">Building Applications</h3>
+					<h5>Create your own application, or clone a sample:</h5>
+					<pre><code>nme clone BunnyMark -v
+cd BunnyMark
+</code></pre>
+					<h5>Build and test your application with the different backends:</h5>
+					<pre><code>nme cpp
+nme cppia
+nme jsprime
+nme neko
+nme android
+nme update ios
+ -> Build + run from XCode
+</code></pre>
+					<h5>| <i>Note: </i><code>nme</code> is a shortcut to <code>haxelib run nme</code></h5>
+					
+					<h3 class="highlight">Learning NME</h3>
+					<h5>NME includes a variety of samples you can use to get started. Every sample project contains the .hx Haxe sources and the .nmml config file to build the example.</h5>
+					<h5>Open a command-prompt or terminal and browse the directory of your choice. When you are ready, use one of the following commands to generate a sample:</h5>
+					<pre><code>nme create PiratePig
+nme create DisplayingABitmap
+nme create AddingAnimation
+nme create HandlingMouseEvents
+nme create HandlingKeyboardEvents
+nme create PlayingSound
+nme create NyanCat
+nme create AddingText
+</code></pre>
+					<h3 class="highlight">Android</h3>
+					<ul>
+					  <li>NDK(r20) Recommended</li>
+					  <li><code>haxelib run nme build android</code> builds all APKs</li>
+					  <li><code>haxelib run nme test android</code> only builds the APK required for the running devices architecture</li>
+					</ul>
+
+				</div>
+            </div>
+            <!-- /container -->
+            <footer id="footer" class="footer container-fluid img-rounded"></footer>
+        </div>
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../js/jquery-1.12.4.min.js"><\/script>')</script>
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Load the header and footer -->
+        <script> 
+            $(function(){
+              $("#header").load("../header.html"); 
+              $("#footer").load("../footer.html"); 
+            });
+        </script> 
+    </body>
+</html>
